@@ -28,7 +28,7 @@ body
 }
 .header
 {
-    background: url("../images/image.png") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("../images/image.png") no-repeat;
     height: 807px;
     background-size: cover;
     display: flex;
@@ -41,17 +41,18 @@ body
     display: flex;
     justify-content: space-between;
     height: 93px;
-    align-items: center;
     position: absolute;
     top: 0;
     width: 100%;
+    align-items: stretch;
+
 
 }
 .header__container .container
 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 
@@ -74,11 +75,37 @@ body
     letter-spacing: 0;
     color: var(--red-color);
 }
+.menu
+{
+
+    display: flex;
+    align-items: center;
+}
+.menu a
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+
+}
+ul.links {
+    display: flex;
+    align-items: center;
+}
+a.active
+{
+    height: 93px;
+    background: #FFFFFF33 0% 0% no-repeat padding-box;
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
 .links li
 {
     float: left;
-    margin-right: 70px;
-    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     font: normal normal bold 16px/22px Nunito Sans;
     letter-spacing: 0;
     color: var(--white-color);
@@ -273,6 +300,10 @@ section.contact.container {
     padding: 11px 50px 11px 50px;
     margin-top: 20px;
     align-self: flex-end;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0;
+    color: var(--red-color);
+    text-transform: uppercase;
 }
 
 .footer__navigation {
