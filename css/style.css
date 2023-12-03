@@ -1,0 +1,67 @@
+:root
+{
+    --red-color: #FF0000;
+    --white-color: #FFFFFF;
+    --black-opacity-color:#00000066;
+    --font-family: 'Nunito Sans', sans-serif;
+}
+body
+{
+    font-family: var(--font-family);
+}
+.container
+{
+    width: 1088px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header
+{
+    background: url("../images/image.png") no-repeat;
+    height: 807px;
+    background-size: cover;
+}
+.header__container
+{
+    background-color: var(--black-opacity-color);
+    display: flex;
+    justify-content: space-between;
+    height: 93px;
+    align-items: center;
+
+}
+.header__container .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo
+{
+    color:var(--white-color);
+}
+.logo .title
+{
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0;
+    color: var(--white-color);
+}
+.logo .colored
+{
+    font: normal normal 800 35px/47px Nunito Sans;
+    letter-spacing: 0;
+    color: var(--red-color);
+}
+.links li
+{
+    float: left;
+    margin-right: 70px;
+    text-align: left;
+    font: normal normal bold 16px/22px Nunito Sans;
+    letter-spacing: 0;
+    color: var(--white-color);
+    text-transform: uppercase;
+
+}
