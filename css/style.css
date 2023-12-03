@@ -4,6 +4,7 @@
     --white-color: #FFFFFF;
     --black-color:#000000;
     --title-color:#6A6A6A;
+    --dark-color: #28272C;
     --service-text-color:#B2B2B2;
     --black-opacity-color:#00000066;
     --font-family: 'Nunito Sans', sans-serif;
@@ -272,4 +273,55 @@ section.contact.container {
     padding: 11px 50px 11px 50px;
     margin-top: 20px;
     align-self: flex-end;
+}
+
+.footer__navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+.left
+{
+    display: flex;
+}
+.right {
+    align-items: flex-end;
+    display: flex;
+}
+footer
+{
+    background: var(--dark-color) 0% 0% no-repeat padding-box;
+    height: 233px;
+    padding-top: 40px;
+    padding-bottom: 39px;
+}
+nav.first {
+    margin-right: 141px;
+}
+footer nav
+{
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.right p
+{
+    font: normal normal 300 12px/16px Nunito Sans;
+    letter-spacing: 0px;
+    color: var(--input-border-color);
+}
+
+footer .logo img
+{
+    width: 16px;
+    height: 19px;
+}
+footer .logo .colored
+{
+    font: normal normal 800 25px/34px Nunito Sans;
+}
+footer .logo .title
+{
+    font: normal normal bold 25px/34px Nunito Sans;
 }
