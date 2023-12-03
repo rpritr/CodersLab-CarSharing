@@ -2,6 +2,8 @@
 {
     --red-color: #FF0000;
     --white-color: #FFFFFF;
+    --black-color:#000000;
+    --title-color:#6A6A6A;
     --black-opacity-color:#00000066;
     --font-family: 'Nunito Sans', sans-serif;
     --text-shadow-color: #00000040;
@@ -117,5 +119,45 @@ section.header__intro.container {
 {
     background: var(--white-color) 0% 0% no-repeat padding-box;
     color: var(--red-color);
+
+}
+.section__title
+{
+    margin-top: 95px;
+    font: normal normal bold 35px/47px Nunito Sans;
+    letter-spacing: 0;
+    color: var(--black-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.articles
+{
+    display: flex;
+}
+article.blog__post {
+    width: 33%;
+    margin-right: 16px;
+}
+
+.blog__post h3 {
+    font: normal normal normal 19px/26px Nunito Sans;
+    letter-spacing: 0;
+    color: var(--title-color);
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.blog__post .blog__text
+{
+    width: 260px;
+    font: normal normal 300 14px/19px Open Sans;
+    letter-spacing: 0;
+    color: var(--title-color);
+    margin-bottom: 15px;
+}
+.blog__post .btn
+{
+    padding: 11px 29px 11px 29px;
+    font: normal normal bold 14px/19px Nunito Sans;
 
 }
