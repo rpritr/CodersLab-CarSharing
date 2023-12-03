@@ -173,17 +173,36 @@ section.header__intro.container {
 .blog
 {
     margin-bottom: 100px;
+    margin-top: 65px;
 }
 .section__title
 {
-    margin-top: 95px;
+
     font: normal normal bold 35px/47px Nunito Sans;
     letter-spacing: 0;
     color: var(--black-color);
     text-transform: uppercase;
     text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.blog__title_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 35px;
 }
+.text-divider
+{
+    width: 50px;
+    height: 3px;
+    /* UI Properties */
+    background: #FF0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+}
+
 .articles
 {
     display: flex;
@@ -220,13 +239,16 @@ article.blog__post {
     padding-top: 60px;
     padding-bottom: 100px;
 }
-.service__title
+.service .section__title
 {
     font: normal normal bold 35px/47px Nunito Sans;
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: uppercase;
     text-align: center;
+}
+.service .blog__title_container
+{
     margin-bottom: 75px;
 }
 .service .blog__post
@@ -245,6 +267,7 @@ article.blog__post {
 .contact
 {
     margin-bottom: 65px;
+    padding-top: 60px;
 }
 section.contact.container {
     width: 904px;
@@ -252,7 +275,7 @@ section.contact.container {
 
 .contact .section__title
 {
-    margin-top: 65px;
+
 }
 .contact_section {
     display: flex;
@@ -289,6 +312,32 @@ section.contact.container {
     font: normal normal normal 16px/22px Nunito Sans;
     letter-spacing: 0;
     color: var(--service-text-color);
+}
+.consent input
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.consent {
+    cursor: pointer;
+    display: flex;
+}
+
+.consent span {
+    height: 22px;
+    flex-shrink: 0;
+    flex-basis: 22px;
+    border: 1px solid #D1D1D1;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+.consent input:checked + span {
+    background: url("../images/icon-check.png") no-repeat center center;
+
 }
 .consent
 {

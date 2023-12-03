@@ -51,7 +51,12 @@
         </a>
     </div>
     <section class="blog container" id="blog">
-        <h2 class="section__title">Blog</h2>
+        <div class="blog__title_container">
+            <div class="text-divider"></div>
+            <h2 class="section__title">Blog</h2>
+            <div class="text-divider"></div>
+        </div>
+
         <div class="articles">
             <article class="blog__post">
                 <img src="images/photo1.png" alt="Blog Image"/>
@@ -75,7 +80,11 @@
     </section>
     <main class="service" id="service">
         <div class="container">
-            <h2 class="service__title">Service</h2>
+            <div class="blog__title_container">
+                <div class="text-divider"></div>
+                <h2 class="section__title">Service</h2>
+                <div class="text-divider"></div>
+            </div>
             <div class="articles">
                 <article class="blog__post">
                     <img src="images/mini1.png" alt="Blog Image"/>
@@ -105,7 +114,12 @@
         </div>
     </main>
     <section class="contact container" id="contact">
-        <h2 class="section__title">Contact</h2>
+        <div class="blog__title_container">
+            <div class="text-divider"></div>
+            <h2 class="section__title">Contact</h2>
+            <div class="text-divider"></div>
+        </div>
+
         <div class="contact_section">
             <div class="contact__photo">
                 <img src="images/contact.png" />
@@ -115,10 +129,11 @@
                     <input type="text" placeholder="Type your name"/><br />
                     <input type="email" placeholder="Type your e-mail" /><br />
                     <textarea rows="6" placeholder="Type your message"></textarea><br />
-                    <div class="consent">
+                    <label class="consent">
                         <input type="checkbox" id="gdpr" name="gdpr" />
-                        <label for="gdpr">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label><br />
-                    </div>
+                        <span></span>
+                       I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+                    </label>
                     <input type="submit" value="Send"/>
                 </form>
             </div>
