@@ -85,8 +85,6 @@ body
 {
     padding-left: 30px;
     padding-right: 30px;
-    display: inline-block;
-
 }
 ul.links {
     display: flex;
@@ -154,6 +152,23 @@ section.header__intro.container {
     background: var(--white-color) 0% 0% no-repeat padding-box;
     color: var(--red-color);
 
+}
+.divider
+{
+    display: flex;
+    justify-content: center;
+    margin-top: -27.5px;
+
+}
+.divider .arrow-down
+{
+    background: red;
+    width: 55px;
+    height: 55px;
+    background: var(--red-color) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px var(--red-text-shadow-color);
+    border-radius: 100px;
+    border: none;
 }
 .blog
 {

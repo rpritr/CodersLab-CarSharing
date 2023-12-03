@@ -22,9 +22,9 @@
                 <nav class="menu">
                     <ul class="links">
                         <a href="#" class="active"><li>Home</li></a>
-                        <a href="#"><li>Blog</li></a>
-                        <a href="#"><li>Service</li></a>
-                        <a href="#"><li>Contact</li></a>
+                        <a href="#blog"><li>Blog</li></a>
+                        <a href="#service"><li>Service</li></a>
+                        <a href="#contact"><li>Contact</li></a>
                     </ul>
                 </nav>
             </div>
@@ -43,7 +43,14 @@
 
         </section>
     </header>
-    <section class="blog container">
+    <div class="divider container">
+        <a href="#service">
+            <button class="arrow-down">
+                <img src="images/icon-arrow-down.png" alt="icon-down"/>
+            </button>
+        </a>
+    </div>
+    <section class="blog container" id="blog">
         <h2 class="section__title">Blog</h2>
         <div class="articles">
             <article class="blog__post">
@@ -66,7 +73,7 @@
             </article>
         </div>
     </section>
-    <main class="service">
+    <main class="service" id="service">
         <div class="container">
             <h2 class="service__title">Service</h2>
             <div class="articles">
@@ -97,7 +104,7 @@
         </div>
         </div>
     </main>
-    <section class="contact container">
+    <section class="contact container" id="contact">
         <h2 class="section__title">Contact</h2>
         <div class="contact_section">
             <div class="contact__photo">
